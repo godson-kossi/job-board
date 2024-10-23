@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job@Hand</title>
+    {% load static %}<link rel="stylesheet" href="{% static 'styles/index.css' %}">
+</head>
+<body>
+<div class="container">
+
+    <header class="header">
+        <div class="header-title">
+            <h1 id="header-title">JOB@HAND</h1>
+        </div>
+        <div class="auth-buttons">
+            <a href="/signin">
+                <button id="sign-in" class="sign-in">SIGN IN</button>
+            </a>
+            <a href="/signup">
+                <button id="sign-up" class="sign-up">SIGN UP</button>
+            </a>
+        </div>
+        <a href="/panel">
+            <button id="manage-button">MANAGE ADVERTS</button>
+        </a>
+        <button id="disconnect-button">DISCONNECT</button>
+    </header>
+
+        <aside class="sidebar">
+            <img src="{% static 'logo.jpg' %}" alt="J@H logo" class="logo-image" id="logo-image">
+        </aside>
+
+    
+        <main class="main-content">
+            <div class="advert-container">
+
+
+            </div>
+
+          
+        </main>
+
+        <footer class="footer">
+            <span id="footer-text">FOOTER</span>
+        </footer>
+    </div>
+
+</body>
+
+<script src="{% static 'scripts/api.js' %}"></script>
+<script src="{% static 'scripts/index.js' %}"></script>
+<script src="{% static 'scripts/authentication_bar.js' %}"></script>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PANEL</title>
+</head>
+<body>
+<div class="container">
+
+    <header class="header">
+        <div class="header-title">
+            <h1 id="header-title"><span>JOB@HAND</span></h1>
+        </div>
+        <div class="auth-buttons">
+            <a href="/signin">
+                <button id="sign-in" class="sign-in">SIGN IN</button>
+            </a>
+            <a href="/signup">
+                <button id="sign-up" class="sign-up">SIGN UP</button>
+            </a>
+        </div>
+        <button id="disconnect-button">DISCONNECT</button>
+    </header>
+
+    <main class="main-content">
+
+        <table>
+            <tr>
+                <th scope="col">Title</th>
+                <th scope="col">Company</th>
+                <th scope="col">Short description</th>
+                <th scope="col">Actions</th>
+            </tr>
+            <tbody id="table"></tbody>
+        </table>
+
+        <table>
+            <tr>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Phone Number</th>
+                <th scope="col">Degree</th>
+                <th scope="col">Birthdate</th>
+            </tr>
+            <tbody id="apps"></tbody>
+        </table>
+
+    </div>
+
+</div>
+{% load static %}
+<script src="{% static 'scripts/api.js' %}"></script>
+<script src="{% static 'scripts/panel.js' %}"></script>
+<script src="{% static 'scripts/authentication_bar.js' %}"></script>
+
+</body>
+</html>

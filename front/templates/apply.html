@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Apply to</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'styles/apply.css' %}">
+
+</head>
+<body>
+<div class="container">
+    
+    <header class="header">
+        <div class="header-title">
+            <h1 id="header-title"><span>JOB@HAND</span></h1>
+        </div>
+
+        <div class="auth-buttons">
+            <a href="/signin">
+                <button id="sign-in" class="sign-in">SIGN IN</button>
+            </a>
+            <a href="/signup">
+                <button id="sign-up" class="sign-up">SIGN UP</button>
+            </a>
+        </div>
+        <a href="/panel">
+            <button id="manage-button">MANAGE ADVERTS</button>
+        </a>
+        <button id="disconnect-button">DISCONNECT</button>
+    </header>
+    <aside class="sidebar">
+        <img src="{% static 'logo.jpg' %}" alt="J@H logo" class="logo-image" id="logo-image">
+    </aside>
+
+
+
+    <main class="main-content">
+
+
+        <div class="content">
+            <div class="item">
+                <div class="item-header">
+                    <div id="item-title" class="title"><span>TITRE</span></div>
+                    <div id="item-entreprise" class="entreprise"><span>ENTREPRISE</span></div>
+                </div>
+                <div class="info-section"></div>
+                <button class="back" id="back-button"><span>BACK</span></button>
+                <div class="info-logo-container">
+                    <div class="logo" id="item-logo">
+                        <img alt="Company logo" id="advert-logo">
+                    </div>
+                    <div class="info">
+                        <p id="info-text"><span>INFO</span></p>
+                    </div>
+                </div>
+                <div class="lines">
+                    <div class="line-item">
+                        <p class="line-item"><span>...</span></p>
+                        <p class="line-item"><span>...</span></p>
+                        <p class="line-item"><span>...</span></p>
+                        <p class="line-item"><span>...</span></p>
+                        <p class="line-item"><span>...</span></p>
+                        <p class="line-item"><span>...</span></p>
+                        <p class="line-item"><span>...</span></p>
+                        <p class="line-item"><span>...</span></p>
+                    </div>
+
+                    <div class="apply-form">
+                        <div class="apf">
+                            <h1>Apply Form</h1>
+
+                            <div class="form-group-container">
+
+                                <div class="form-group">
+                                    <label for="firstname"><span>First Name:</span></label>
+                                    <input type="text" id="firstname" name="firstname" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastname"><span>Last Name:</span></label>
+                                    <input type="text" id="lastname" name="lastname" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email"><span>Email:</span></label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone_number"><span>Phone:</span></label>
+                                    <input type="tel" id="phone_number" name="phone_number"
+                                           required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="degree"><span>Degree:</span></label>
+                                    <input type="text" id="degree" name="degree" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="birthdate"><span>birthdate:</span></label>
+                                    <input type="date" id="birthdate" name="birthdate" required>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="submit-container">
+                        <button class="submit" id="submit-button"><span>SUBMIT</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer class="footer">
+        <p id="footer-text"><span>FOOTER</span></p>
+    </footer>
+</div>
+
+<script src="{% static 'scripts/api.js' %}"></script>
+<script src="{% static 'scripts/apply.js' %}"></script>
+<script src="{% static 'scripts/authentication_bar.js' %}"></script>
+</html>

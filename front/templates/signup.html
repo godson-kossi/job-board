@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SIGN PAGE</title>
+    {% load static %}<link rel="stylesheet" href="{% static 'styles/signup.css' %}">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo-site">
+                <img src="{% static 'logo.jpg' %}" alt="J@H logo" class="logo-image" id="logo-image">
+            </div>
+        </aside>
+
+        <header class="header">
+            <div class="header-title">
+                <h1>JOB@HAND</h1>
+            </div>
+        </header>
+
+        <div class="main-container">
+            <h1 id="register-title"><span> </span></h1>
+            <div>
+                <button id="applicant-button">Applicant</button>
+                <button id="company-button">Company</button>
+            </div>
+            <form id="register-form" action="register.php" method="post" style="display: none;"> <!-- Masquer le formulaire par défaut -->
+                
+                <div class="form-group applicant-fields" style="display: none;"> <!-- Masquer les champs Applicant -->
+                    <label for="first-name"><span>First Name:</span></label>
+                    <input type="text" id="first-name" name="first_name" required>
+                </div>
+                <div class="form-group applicant-fields" style="display: none;"> <!-- Masquer les champs Applicant -->
+                    <label for="last-name"><span>Last Name:</span></label>
+                    <input type="text" id="last-name" name="last_name" required>
+                </div>
+
+                <div class="form-group company-fields" style="display: none;"> <!-- Masquer les champs Company -->
+                    <label for="name"><span>Name:</span></label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email"><span>Email:</span></label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone"><span>Phone:</span></label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group applicant-fields" style="display: none;"> <!-- Masquer les champs Applicant -->
+                    <label for="degree"><span>Degree:</span></label>
+                    <input type="text" id="degree" name="degree" required>
+                </div>
+                <div class="form-group applicant-fields" style="display: none;"> <!-- Masquer les champs Applicant -->
+                    <label for="birthday"><span>Birthday:</span></label>
+                    <input type="date" id="birthday" name="birthday" required>
+                </div>
+                <div class="form-group">
+                    <label for="password"><span>Password:</span></label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group company-fields" style="display: none;"> <!-- Masquer les champs Company -->
+                    <label for="adresse"><span>Address:</span></label>
+                    <input type="text" id="adress" name="adress" required>
+                </div>
+                <button type="submit" id="register-button"><span>Sign Up</span></button>
+            </form>
+            <p id="redirect"><span>Already have an account? <a href="signin.html">Log in here</a></span></p>
+        </div>
+
+        <footer class="footer">
+            <p>FOOTER</p>
+        </footer>
+    </div>
+    <script src="{% static 'scripts/api.js' %}"></script>
+    <script src="{% static 'scripts/signup.js' %}"></script>
+</body>
+</html>

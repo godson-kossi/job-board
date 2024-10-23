@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Signin page</title>
+    {% load static %}<link rel="stylesheet" href="{% static 'styles/signin.css' %}">
+
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar with logo -->
+        <aside class="sidebar">
+            <div class="logo-site">
+                <img src="{% static 'logo.jpg' %}" alt="J@H logo" class="logo-image" id="logo-image">
+            </div>
+        </aside>
+
+        <!-- Header section -->
+        <header class="header">
+            <div class="header-title">
+                <h1>JOB@HAND</h1>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="login-section">
+                <h1 id="login-title"><span>Authentificate</span></h1>
+                <form id="login-form" onsubmit="return false">
+                    <div class="form-group">
+                        <label for="email"><span>Email:</span></label>
+                        <input type="text" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password"><span>Mot de passe:</span></label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <button type="submit" id="login-button"><span>Se connecter</span></button>
+                </form>
+                <p id="redirect"><span>Pas de compte ? <a href="signup.html">Inscrivez-vous ici</a></span></p>
+            </div>
+        </main>
+
+        <!-- Footer section -->
+        <footer class="footer">
+            <p>FOOTER</p>
+        </footer>
+    </div>
+
+    <script src="{% static 'scripts/api.js' %}"></script>
+    <script src="{% static 'scripts/signin.js' %}"></script>
+</body>
+</html>

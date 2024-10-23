@@ -1,0 +1,301 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+   
+    background-color: bisque;
+
+    
+}
+
+.sidebar {
+    width: 150px;
+    background-color: bisque;
+    border-right: 2px solid #000;
+    text-align: center;
+    padding-top: 20px;
+    position: absolute;
+    top: 0;
+    bottom: 50px;
+}
+
+.logo-site {
+    width: 130px; 
+    height: 130px; 
+    margin-top: 5px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.logo-site img {
+    max-width: 80px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: bisque;
+    padding: 10px 20px;
+    border-bottom: 2px solid #000;
+    position: fixed;
+    top: 0;
+    left: 150px;
+    right: 0;
+    height: 60px;
+    box-sizing: border-box;
+}
+
+.header-title {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.auth-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.auth-buttons p {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.disconnect {
+    padding: 5px 10px;
+    border: 2px solid #000;
+    background-color: #e0e0e0;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.content {
+    margin-top: 60px;
+    padding: 10px;
+    margin-left: 170px;
+    height: calc(95vh - 90px);
+    overflow-y: auto;
+    position: relative;
+    background-color: rgb(252, 221, 140);
+
+}
+
+.item {
+    border: 1px solid none;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    height: 20px;
+}
+
+.item-header {
+    display: flex;
+    margin-bottom: 10px;
+  
+}
+
+.title {
+    margin-right: 10px;
+    border:2px solid black;
+    background-color: #fff;
+    width: 30%;
+}
+
+.entreprise {
+    margin-left: 20px;
+    border:2px dotted #000;
+    width: 30%;
+}
+
+
+.info-logo-container {
+   height: 150%;
+   
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.info-section {
+    display: flex;          
+    flex-direction: row;    
+    align-items: flex-start; 
+}
+
+.line-item{
+    margin-top: 100px;
+    width:35rem ;
+    height: 15rem;
+    display: fixed;
+
+}
+.lines1{
+    height: 300rem;
+    
+}
+
+.line-item1{
+   margin-top: 20px;
+   width: 63rem;
+   height: 20rem;
+
+}
+
+.lines {
+    flex: 1;
+    padding-left: 180px;
+    justify-content: flex-end;
+    width: 100px;
+    flex-direction: column;
+
+}
+
+.lines p {
+    width: 100%;
+    height: 2px;
+    
+    margin-bottom: 10px;
+}
+.logo {
+    width: 130px;
+    height: 130px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+
+.info {
+    
+    width: 250px;
+    min-height: 220px;
+    margin-right: 5px;
+    font-weight: bold;
+    display: grid;
+    position: relative;
+
+}
+
+.contract-text {
+    border: 1px solid #000; 
+    padding: 2px 5px;
+    border-radius: 4px; 
+    background-color: #f0f0f0; 
+    display: inline-block; 
+    margin-bottom: 3px; 
+}
+
+.info-item {
+   border: 1px solid#000;
+    width: 100%; 
+}
+
+.info-item label {
+    display: block; 
+    margin: 5px 0; 
+}
+
+.info-item textarea,
+.info-item input {
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+.contract-dropdown {
+    display: none; 
+    position: absolute; 
+    background-color: white;
+    border: 1px solid #ccc;
+    z-index: 1;
+    padding: 10px;
+}
+
+.contract-label:hover .contract-dropdown {
+    display: block; 
+}
+
+
+.back {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    padding: 3px 5px;
+    border: 2px solid #000;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.success-message {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: #d4edda; 
+    color: #155724; 
+    padding: 15px; 
+    border: 1px solid #c3e6cb; 
+    border-radius: 5px; 
+    margin: 20px 0; 
+    font-size: 16px; 
+    text-align: center; 
+}
+
+
+#submit-company-button {
+    background-color: #4CAF50; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#submit-company-button:hover {
+    background-color: #45a049; 
+}
+
+
+#submit-company-button:active {
+    background-color: #3e8e41;
+    transform: scale(0.98);
+    align-items: center; 
+    
+}
+
+
+#submit-company-button:disabled {
+    background-color: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
+    border: 1px solid #999999;
+}
+
+
+
+.footer {
+    background-color: #e0e0e0;
+    padding: 10px;
+    text-align: center;
+    border-top: 2px solid #000;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}

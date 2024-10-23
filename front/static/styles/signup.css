@@ -1,0 +1,176 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: bisque;
+
+}
+
+.sidebar {
+    width: 150px;
+    background-color: bisque;
+    border-right: 2px solid #000;
+    text-align: center;
+    padding-top: 20px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.logo-site {
+    width: 130px;
+    height: 130px;
+    margin: 20px auto;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.logo-site img {
+    max-width: 80px;
+    margin-top: 25px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    padding: 10px 20px;
+    border-bottom: 2px solid #000;
+    position: fixed;
+    top: 0;
+    left: 150px;
+    right: 0;
+    height: 60px;
+    box-sizing: border-box;
+}
+
+.header-title {
+    font-size: 24px;
+    background-color: bisque;
+
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.main-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    margin-left: 120px; 
+    margin-top: 60px; 
+    padding: 20px;
+    padding-bottom: 100px;
+    box-sizing: border-box;
+    background-color: rgb(252, 221, 140);
+
+
+}
+
+#register-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+#register-form {
+    background-color: #fff;
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+select {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #5a5a5a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #444;
+}
+
+#redirect {
+    text-align: center;
+    margin-top: 15px;
+}
+
+#redirect a {
+    color: #5a5a5a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#redirect a:hover {
+    text-decoration: underline;
+}
+
+
+.applicant-fields {
+    display: block; 
+}
+
+.company-fields {
+    display: none; 
+}
+
+
+
+.footer {
+    background-color: #e0e0e0;
+    padding: 10px;
+    text-align: center;
+    border-top: 2px solid #000;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
